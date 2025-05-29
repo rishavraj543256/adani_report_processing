@@ -104,7 +104,7 @@ Sample input templates available in:
 4. Process outputs save to: `output/format.xlsx`
 
 ## 🪛 Maintainers
-- [Rishav Raj](https://github.com/RishavRaj) - Project lead
+- [Rishav Raj](https://github.com/rishavraj543256) - Project lead
 
 ## 🚨 Support Policy
 Visit [official forum link] for technical support and feature requests. Unauthorized changes require prior written approval.
