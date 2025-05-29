@@ -1,79 +1,100 @@
-# Adani Data Processing Suite
+# 🌾 Adani Data Processing Suite
 
-## Overview
-The Adani Data Processing Suite is a comprehensive GUI application designed to process various types of data files for Adani operations. The application supports processing of master data, hygiene data, MB52 data, count sheets, stack data, and raw material data.
+[![Python Version](https://img.shields.io/badge/Python-3.x-blue)](https://www.python.org/) 
+[![License](https://img.shields.io/badge/License-Proprietary-red)](#) 
+[![Maintenance](https://img.shields.io/badge/Maintained-yes-green)](#)
 
-## Prerequisites
-- Python 3.x
-- Required Python packages (install using `pip install -r requirements.txt`):
-  - tkinter
-  - pandas
-  - openpyxl
-  - xlrd
+A comprehensive GUI application for processing Adani operations data across multiple formats.
 
-## Installation
-1. Clone or download this repository
-2. Install the required dependencies:
+## 📌 Table of Contents
+1. [Overview](#overview)
+2. [📁 Project Structure](#project-structure)
+3. [✨ Features](#features)
+4. [_SETUP](#setup)
+5. [📥 Input Requirements](#input-requirements)
+6. [🖥️ Usage Guide](#usage-guide)
+7. [🪛 Maintainers](#maintainers)
+8. [🚨 Support Policy](#support-policy)
+
+## 🧾 Overview
+The Adani Data Processing Suite offers a feature-rich graphical interface for handling diverse data processing needs across Adani operations. The application supports six distinct data processing workflows with consistent formatting and output standards.
+
+Key Technologies:  
+Python | Tkinter | Pandas | OpenPyXL
+
+## 📁 Project Structure
+```bash
+├── app_mb52.py           # Core processing engine
+├── gui.py                # Main GUI interface
+├── requirements.txt      # Dependency declarations
+├── input/                # Sample input templates
+│   ├── countsheet_input_files/
+│   └── hygeine_input_files/
+└── output/               # Processed output files
+```
+
+## ✨ Features
+- Multiple processing modes for varied data types
+- Integrated file validation and error handling
+- Unified output format template
+- Console logging and status tracking
+- Support for both Wheat and Paddy/Rice categories
+- Interactive file selection interface
+
+## 🛠️ SETUP
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/adani-data-suite.git
+   ```
+2. Navigate to project directory:
+   ```bash
+   cd adani-data-suite
+   ```
+3. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-## Usage Instructions
+## 📥 Input Requirements
+For each processing mode, you'll need:
+- Category selection (Wheat/Paddy/Rice)
+- S Loc Code
+- Corresponding input file for the module
 
-### Starting the Application
-1. Run the main application:
+Sample input templates available in:
+```
+/input/
+├── countsheet_input_files/
+├── hygeine_input_files/
+└── mb52_input_files/
+```
+
+## 🖥️ Usage Guide
+1. Launch the application:
    ```bash
    python gui.py
    ```
 
-### Input Parameters
-1. **Category**: Select either "Wheat" or "Paddy/Rice"
-2. **S Loc Code**: Enter your location code
+2. Complete form with:
+   - Category selection
+   - Location code
+   - Input file selection
 
-### File Processing Steps
+3. Choose processing module:
+   - Master Data
+   - Hygiene Data
+   - MB52 Data
+   - Count Sheet
+   - Stack Data
+   - Raw Material
 
-#### 1. Master Data Processing
-1. Click "Browse" to select your master file
-2. Click "Process Data" to process the master data
-3. The output will be saved in `output/format.xlsx`
+4. Process outputs save to: `output/format.xlsx`
 
-#### 2. Hygiene Data Processing
-1. Select your hygiene input file using the "Browse" button
-2. Click "Process Hygiene" to process the hygiene data
-3. Results will be updated in the format file
+## 🪛 Maintainers
+- [Rishav Raj](https://github.com/RishavRaj) - Project lead
 
-#### 3. MB52 Data Processing
-1. Select your MB52 input file
-2. Click "Process MB52" to process the MB52 data
-3. Results will be updated in the format file
+## 🚨 Support Policy
+Visit [official forum link] for technical support and feature requests. Unauthorized changes require prior written approval.
 
-#### 4. Count Sheet Processing
-1. Select your count sheet input file
-2. Click "Process Count Sheet" to process the count sheet data
-3. Results will be updated in the format file
-
-#### 5. Stack Data Processing
-1. Select your stack input file
-2. Click "Process Stack" to process the stack data
-3. Results will be updated in the format file
-
-#### 6. Raw Material Processing
-1. Click "Process Raw Material" to process raw material data
-2. Results will be updated in the format file
-
-### Output
-- All processed data is saved in `output/format.xlsx`
-- The console output area shows processing status and any errors
-- Success/error messages are displayed in popup windows
-
-### Troubleshooting
-- Ensure all required input files are in the correct format
-- Check that the S Loc Code is valid
-- Verify that the selected category matches your data
-- If errors occur, check the console output for detailed error messages
-
-## Support
-For any issues or questions, please contact the development team.
-
-## License
-This software is proprietary and confidential. Unauthorized copying, distribution, or use is strictly prohibited. 
+## 📎 Acknowledgements
+Project sponsored by Adani Group
