@@ -4,6 +4,8 @@
 [![License](https://img.shields.io/badge/License-Proprietary-red)](#) 
 [![Maintenance](https://img.shields.io/badge/Maintained-yes-green)](#)
 
+![Adani Data Processing GUI Interface](tool_img.png)
+
 A comprehensive GUI application for processing Adani operations data across multiple formats.
 
 ## 📌 Table of Contents
@@ -44,7 +46,7 @@ Python | Tkinter | Pandas | OpenPyXL
 ## 🛠️ SETUP
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/adani-data-suite.git
+   git clone https://github.com/rishavraj543256/adani_report_processing
    ```
 2. Navigate to project directory:
    ```bash
